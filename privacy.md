@@ -1,38 +1,43 @@
-# Privacy Policy — Edge Music
+# TinyShield Privacy Policy
 
-> DRAFT TEMPLATE — Complete and verify every field before using this URL in a store listing.
+Effective date: 10 October 2026  
+Extension version: 3.0.0  
+Developer: GZVS — GZ - Your friendly developer  
+Contact: zsgeorgios@icloud.com
 
-**Developer:** GZVS — GZ - Your friendly developer  
-**Effective date:** [YYYY-MM-DD]  
-**Contact:** [Public support email or private support form URL]
+## What TinyShield does
+TinyShield blocks selected ad and tracker requests using packaged Chrome Declarative Net Request rules. Optional adult and gambling filters match the hostname of top-level website navigations against bundled domain lists and redirect matching requests to a local TinyShield blocked-site page before the website loads. Optional page cleanup hides common ad placeholders with packaged CSS. An optional YouTube network filter is experimental and best effort.
 
-## Scope
-This policy describes how Edge Music handles information when you use the extension.
-[Describe the extension's purpose and supported browsers.]
+## Information processed on your device
+Chrome matches request URLs and domains locally to apply TinyShield's network rules. The extension does not receive or record a browsing-history feed or blocked-request log. When page cleanup is enabled, a local helper reads the current page hostname in memory to honor allowed websites and sets a page attribute so packaged CSS can hide matching ad placeholders. It does not collect page text, form fields, passwords, or audio. The blocked-site page shows only the category; it does not store or display the original URL.
 
-## Information accessed and processed
-[Describe every category of information the extension accesses or processes, including data processed only on the device. Explain why each category is needed. Address website content/URLs, audio/files/metadata, preferences and identifiers where applicable. Do not equate local processing with no data access.]
+## Local storage and retention
+TinyShield stores your filter preferences, allowed website domains, and current filter-application status in chrome.storage.local in this browser profile. It does not use account sync, cloud storage, cookies, or local browsing logs. Preferences remain until you change them or remove the extension. You can remove individual allowed domains in Settings. Uninstalling TinyShield removes its extension-managed local settings from the browser; copies of the extension files you saved separately are unaffected.
 
-## Storage and retention
-[Explain what is stored, where it is stored, and how long it is retained. Distinguish local browser storage, browser account sync, and any developer or third-party server storage.]
-
-## Transmission and sharing
-[State whether any information leaves the device. Identify recipients, information sent, purposes and service links. Include analytics, crash reports, remote rules, update services, SDKs or APIs if used. Make no-data-sale or no-tracking claims only after verification.]
+## Transmission, sharing and tracking
+TinyShield has no developer-operated backend, analytics, advertising SDK, telemetry, or automatic filter-list downloader. It does not send your browsing activity or settings to the developer or any server, sell personal data, or use browsing data for advertising. Blocklists are shipped inside the extension and refreshed through extension releases. Chrome handles its own extension installation and update services under Google's policies.
 
 ## Permissions
-[For each requested browser permission and host permission, explain its user-facing purpose. Use the released manifest as the source.]
+- **declarativeNetRequest:** applies packaged ad, tracker and category rules, plus user-selected exceptions.
+- **storage:** saves local preferences, allowed websites and filter status.
+- **scripting:** registers the packaged helper and CSS when optional page cleanup is enabled.
+- **sidePanel:** offers TinyShield's controls next to a webpage; the toolbar action otherwise opens the compact popup.
+- **Optional HTTP/HTTPS website access:** required to redirect a listed website to TinyShield's local blocked page and to run page cleanup. Chrome asks when you enable those features. You can revoke access in Chrome's extension settings; TinyShield turns the dependent features off. Basic ad and tracker blocking does not require granting this optional access.
 
-## External websites and donations
-[If the extension includes support or donation links, identify the destination services and their privacy policies. Describe any data passed in URLs or requests. Remove this section if inapplicable.]
+TinyShield does not request tabs, history, webRequest, or declarativeNetRequestFeedback permissions. Its use of chrome.tabs is limited to opening its side panel for the active tab or opening a new tab when the blocked page has no back history; it does not read browsing URLs.
 
-## Your choices and deletion
-[Give accurate steps to remove stored settings and other extension data. Explain any synced or remotely stored data separately; do not assume uninstalling clears everything.]
+## External links and donations
+The GitHub button opens https://github.com/GZVS. The optional donation button opens https://www.paypal.com/paypalme/Zacharidis. These links pass no blocked URL or settings to their destinations, use no-referrer link policies, and never navigate automatically. GitHub and PayPal may process ordinary connection information and any information you provide there under their own policies:
+- GitHub: https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement
+- PayPal: https://www.paypal.com/gr/legalhub/paypal/privacy-full
 
-## Security
-[Describe implemented protections for stored or transmitted information.]
+Contacting the developer by email shares the information you choose to include. It is used to respond to your message and is not collected automatically by the extension. All features are free; donations are optional and payment details are handled by PayPal.
 
-## Changes to this policy
-[Explain how updates are communicated and dated.]
+## Security and your choices
+TinyShield contains no remotely executed code and has a restrictive extension Content Security Policy. Filtering and preferences stay local. You can pause all filters, disable categories separately, remove website exceptions, revoke optional website access, or uninstall the extension. Website exceptions bypass all TinyShield filters for that domain and its subdomains. This is not a locked parental-control or tamper-resistant product. No domain list guarantees complete coverage.
+
+## Policy changes
+This document will be updated when TinyShield's data handling changes. The effective date and extension version identify the policy applicable to a release. Updates are supplied with the extension and at the public policy URL used in its store listing.
 
 ## Contact
-For privacy questions, contact [Public support email or private support form URL]. Do not send personal information in public GitHub issues.
+For privacy questions, email zsgeorgios@icloud.com. Do not include private information in public GitHub issues.
