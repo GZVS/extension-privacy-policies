@@ -14,6 +14,8 @@ These starter files are visibly marked as drafts. They contain no verified claim
 | --- | --- | --- |
 | Silent YouTube | [silent-youtube/privacy.md](extensions/silent-youtube/privacy.md) | Draft |
 | YouTube Music Visualizer | [youtube-music-visualizer/privacy.md](extensions/youtube-music-visualizer/privacy.md) | Draft |
+| Crimson Pulse | [privacyCrimsonPulse.md](privacyCrimsonPulse.md) · [web](https://gzvs.github.io/crimson-pulse/privacy.html) | Published |
+| Spartan Shield | [PRIVACY-SPARTAN-SHIELD.md](PRIVACY-SPARTAN-SHIELD.md) · [web](https://gzvs.github.io/spartan-shield/privacy.html) | Published |
 | NjoyYourMusic | [njoyyourmusic/privacy.md](extensions/njoyyourmusic/privacy.md) | Draft |
 | TinyShield | [tinyshield/privacy.md](extensions/tinyshield/privacy.md) | Draft |
 | Edge Music | [edge-music/privacy.md](extensions/edge-music/privacy.md) | Draft |

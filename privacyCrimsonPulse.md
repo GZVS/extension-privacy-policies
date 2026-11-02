@@ -1,38 +1,46 @@
-# Privacy Policy — YouTube Music Visualizer
+# Crimson Pulse Privacy Policy
 
-> DRAFT TEMPLATE — Complete and verify every field before using this URL in a store listing.
+**Effective date:** 9 October 2026
+**Applies to:** Crimson Pulse — YouTube Visualizer, version 0.3.0 and later
+**Developer:** GZVS (Georgios Zacharidis)
+**Contact:** gzvsDev@icloud.com
+**Web version:** https://gzvs.github.io/crimson-pulse/privacy.html
 
-**Developer:** GZVS — GZ - Your friendly developer  
-**Effective date:** [YYYY-MM-DD]  
-**Contact:** [Public support email or private support form URL]
+## Purpose
 
-## Scope
-This policy describes how YouTube Music Visualizer handles information when you use the extension.
-[Describe the extension's purpose and supported browsers.]
+Crimson Pulse displays music-reactive visualizations on YouTube and YouTube Music. Audio processing happens on your device after you explicitly start a session.
 
-## Information accessed and processed
-[Describe every category of information the extension accesses or processes, including data processed only on the device. Explain why each category is needed. Address website content/URLs, audio/files/metadata, preferences and identifiers where applicable. Do not equate local processing with no data access.]
+## Information processed on your device
 
-## Storage and retention
-[Explain what is stored, where it is stored, and how long it is retained. Distinguish local browser storage, browser account sync, and any developer or third-party server storage.]
+- Tab audio: Crimson Pulse accesses audio from the selected supported tab and calculates frequency and energy measurements in memory. It does not use your microphone, capture screen video, or create audio recordings.
+- Current tab and website content: the tab identifier, current page URL, player elements, and playback state are used to check compatibility, position the visualizer, and manage the session. The extension does not create a browsing-history database.
+- Page interaction: pointer, click, scroll, touch, and keyboard events reset the inactivity timer and hide the visualization. Event histories and typed text are not stored. Configured extension shortcuts control the active session.
+- Preferences and presets: visual settings, separate YouTube and YouTube Music settings, favorite styles, and custom preset names and settings are saved in local extension storage. These settings are not synced by the extension or uploaded to the developer.
 
-## Transmission and sharing
-[State whether any information leaves the device. Identify recipients, information sent, purposes and service links. Include analytics, crash reports, remote rules, update services, SDKs or APIs if used. Make no-data-sale or no-tracking claims only after verification.]
+## Use and sharing
+
+This information is used only to provide the visualization and its controls. Captured audio is connected back to your audio output so you can continue hearing the video. Crimson Pulse has no developer backend, analytics, advertising system, account system, or remote executable code. The extension does not sell data or send audio, page activity, or settings to the developer or other recipients. Data is not used for credit or lending decisions.
+
+## Retention and deletion
+
+Audio buffers, frequency data, tab identifiers, and inactivity timing are transient. Preferences remain in the browser profile until changed or the extension is uninstalled. Delete a custom preset using the Delete button after selecting it. Uninstalling the extension removes its local extension settings from that browser profile.
+
+## Session controls
+
+Use Stop visualizer to end audio capture. Closing the captured tab or navigating away from supported watch pages stops the session. Navigation between supported watch pages may keep the session active. A reload or browser interruption may require starting again. The show/hide shortcut changes visualization visibility; it does not stop audio capture. Press Esc to leave fullscreen.
 
 ## Permissions
-[For each requested browser permission and host permission, explain its user-facing purpose. Use the released manifest as the source.]
 
-## External websites and donations
-[If the extension includes support or donation links, identify the destination services and their privacy policies. Describe any data passed in URLs or requests. Remove this section if inapplicable.]
+- storage: save visual preferences and custom presets locally.
+- activeTab: identify and authorize the tab selected when you invoke the extension.
+- tabCapture: access that tab's audio after you start a session.
+- offscreen: analyze the audio and preserve playback while the popup is closed.
+- Content scripts on www.youtube.com and music.youtube.com: access the player, playback state, and interaction events needed to display and dismiss visuals.
 
-## Your choices and deletion
-[Give accurate steps to remove stored settings and other extension data. Explain any synced or remotely stored data separately; do not assume uninstalling clears everything.]
+## Donations and external services
 
-## Security
-[Describe implemented protections for stored or transmitted information.]
+The optional support button opens PayPal at https://paypal.me/Zacharidis. PayPal's policies apply to that website and any payment. Crimson Pulse does not process payment details. The developer may receive donor information directly from PayPal under its service terms. YouTube, Microsoft Edge, and other browsers operate under their own privacy policies.
 
-## Changes to this policy
-[Explain how updates are communicated and dated.]
+## Changes and contact
 
-## Contact
-For privacy questions, contact [Public support email or private support form URL]. Do not send personal information in public GitHub issues.
+This policy will be updated when the extension's data practices change. For privacy questions or support, contact gzvsDev@icloud.com.
