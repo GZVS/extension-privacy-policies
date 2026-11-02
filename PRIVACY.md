@@ -3,7 +3,7 @@
 **Effective date:** 14 October 2026
 **Applies to:** Zenith Guard browser extension, version 3.2.0 and later
 **Developer:** GZVS (Georgios Zacharidis)
-**Contact:** zsgeorgios@icloud.com
+**Contact:** gzvsDev@icloud.com
 
 ## Summary
 
@@ -66,4 +66,4 @@ If this policy changes, the updated version will be published at this address wi
 
 ## Contact
 
-Questions about this policy: **zsgeorgios@icloud.com**
+Questions about this policy: **gzvsDev@icloud.com**

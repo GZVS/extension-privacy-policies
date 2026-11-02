@@ -3,7 +3,7 @@
 **Effective date:** 24 October 2026
 **Applies to:** Spartan Shield browser extension (formerly Spartan Shield), version 5.0.0 and later
 **Developer:** GZVS (Georgios Zacharidis)
-**Contact:** zsgeorgios@icloud.com
+**Contact:** gzvsDev@icloud.com
 
 ## Summary
 
@@ -81,4 +81,4 @@ If this policy changes, the updated version will be published at this address wi
 
 ## Contact
 
-Questions about this policy: **zsgeorgios@icloud.com**
+Questions about this policy: **gzvsDev@icloud.com**
